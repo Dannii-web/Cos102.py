@@ -1,10 +1,11 @@
-import account
-class SavingsAccount(Account):
-    def __init__(self,balance):
-        Account.__init__(self,balance)
+from account import Account
 
-    def withdraw(self,balance):
-        if amount < limit:
+class SavingsAccount(Account):
+    def __init__(self, balance):
+        Account.__init__(self, balance)
+
+    def withdraw(self, amount):
+        if amount < 4000 :
             super().withdraw(amount)
         else:
-            print("Amount exceeds limit")
+            print("You have exceeded your limit")
